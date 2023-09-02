@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky spin</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div id="button-container">
+        <button id="showBannerButton">Validate your promocode</button>
+    </div>
+
+    <div id="banner" class="hidden">
+        <button id="closeBannerButton">x</button>
+        <div id="promocodeBlock">
+            <input type="text" id="promocodeInput" placeholder="Write your promocode">
+            <button id="verifyButton">Verify</button>
+        </div>
+        <div id="verifiedPromocodeText"></div>
+    </div>
+
+    <div id="bannerWithPrize" class="hidden">
+        <button id="closeBannerButton2">x</button>
+        <div id="prizeBlock">
+            <div id="prizeBlockMessage">
+                Ok, your prize is ...
+            </div>
+        </div>
+    </div>
+    <div id="verifiedPromocodeText"></div>
+
+    <div id="overlay" class="hidden"></div>
+
+
+
+
+    <div id="loader">
+        <p>Checking for available prizes...</p>
+        <div class="lds-dual-ring"></div>
+    </div>
+    <div id="content" style="display: none;"></div>
+
+
+
+    <div id="spinButtonBlock">
+        <button id="spinButton" disabled class="notActiveBtn"></button>
+        <div id="qtyOfTriesMessege"></div>
+    </div>
+
+    <div class="img_container">
+        <img id="img" src="./1003.png">
+    </div>
+    <!-- <button id="spinButton2">Spin the wheel2</button> -->
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
